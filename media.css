@@ -1,0 +1,364 @@
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+  .menu {
+    padding-right: 20%;
+  }
+  .logo {
+    margin-left: -15px;
+    width: 10px;
+    margin-right: 1%;
+  }
+  .logo img {
+    margin-left: -25px;
+    width: 70px;
+  }
+  .icons {
+    display: none;
+  }
+  .menu ul li {
+    padding-left: 18px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  #impt{
+    margin-left:-0px;
+  }
+  .inpt {
+    position:absolute;
+    top:-45px;
+    text-align: center;
+  }
+  input {
+    margin-left: 160%;
+  }
+  .abt {
+    margin-top: 2px !important;
+  }
+  .total {
+    padding-top: 4px !important;
+  }
+  .add {
+    padding-top: 5px !important;
+  }
+  .abt {
+    margin-bottom: 73%;
+  }
+  .cartt{
+    margin-top:10%;
+    padding-right:20px;
+  }
+  .wish {
+    font-size: 12px;
+    margin-top: 2%;
+  }
+  .ask {
+    font-size: 12px;
+  }
+
+  /* FREEBIES */
+  .chase {
+    margin-left: 10%;
+  }
+
+  /* SERVICES */
+  .slide h1 {
+    padding: 15% 0% 3% 8%;
+    font-size: 60px;
+    line-height: 53px;
+  }
+  .slide button {
+    margin-left: 8%;
+    padding: 5px 25px;
+  }
+  .slide img {
+    width: 100%;
+  }
+  .serv-inpt{
+    position:absolute;
+    top:-45px;
+    text-align: center;
+  }
+  .boxx {
+    padding: 0%;
+  }
+  .more {
+    padding-top: 8% !important;
+  }
+  .more h3 {
+    font-size: 20px;
+    padding-top: 8% !important;
+  }
+
+  .brand-img img {
+    width: 100%;
+  }
+  .test img {
+    padding-left: 50px;
+    width: 150px;
+  }
+  .chase1 {
+    margin-left: 40%;
+  }
+
+  /* ABOUT US */
+  .who-we{
+    padding-top:0%;
+  }
+  .who-we p{
+    padding-right:0%;
+  }
+  .office img{
+    padding-top:8%;
+  }
+  .fin{
+    margin-top:10%;
+    visibility:visible;
+  }
+  .cardd{
+    width:120%;
+  }
+
+  /* CONTACT */
+  .contac i{
+    font-size:60px;
+  }
+  .send{
+    width:100%;
+    padding:0% 0% 7% 0%;
+    margin: 0 0;
+  }
+  .send h4{
+    font-size:20px;
+  }
+  .send input{
+    width:100%;
+    margin-left:-1;
+  }
+  .send select{
+    width:100%;
+  }
+  .with{
+    padding-right:57% !important;
+  }
+    /* QUESTION */
+    .frequent{
+      width:100%;
+      padding:0 0 7% 0;
+    }
+    .frequent select{
+      margin:4% 0;
+      height:70%;
+    }
+}
+
+/* MIN WIDTH 320 TO MAX WIDTH 450  */
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .logo {
+    width: 50%;
+  }
+  .inpt {
+    text-align: center;
+    position:absolute;
+    top:293px;
+    right:-10px;
+    z-index:1;
+  }
+  .icons {
+    text-align: center;
+  }
+  .icons i {
+    padding: 10px;
+  }
+  .cart-info{
+    margin-left:20%;
+  }
+  .cart{
+    right:13px
+  }
+  .light {
+    height: 100%;
+  }
+  .public {
+    text-align: center;
+  }
+  hr {
+    margin: auto;
+  }
+  .abt {
+    margin-bottom: 20px;
+  }
+  .det {
+    margin-top: 10px;
+  }
+  .menu ul li{
+    text-align:center;
+  }
+  .direc {
+    text-align: center;
+  }
+  .four {
+    text-align: center;
+  }
+  .wish {
+    margin-top: 5px;
+  }
+  .foot {
+    text-align: center;
+  }
+  .fot-icon {
+    text-align: center;
+  }
+  .ask {
+    font-size: 13px;
+    padding: 7px 20px 7px 20px;
+  }
+
+  /* FREEBIES */
+  .image1 {
+    text-align: center;
+  }
+  .image2 {
+    text-align: center;
+  }
+  .bot{
+    justify-content:center;
+  }
+  /* .chase {
+    margin-left: -200%;
+  } */
+
+  /* SERVICES */
+  .slide h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 10% 0% 3% 0%;
+    line-height: 50px;
+  }
+  .slide button {
+    padding: 10px 25px;
+    margin: auto;
+    display: flex;
+  }
+  .slide img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .serv-inpt {
+    text-align: center;
+    position:absolute;
+    top:293px;
+    right:-10px;
+    z-index:1;
+  }
+  .boxx {
+    text-align: center;
+  }
+  .more {
+    padding-top: 5% !important;
+  }
+  .brand-img img {
+    width: 100%;
+  }
+  .test {
+    text-align: center;
+  }
+  .test img {
+    padding-left: 15px;
+    width: 150px;
+  }
+  .get h1 {
+    font-size: 30px;
+  }
+  .chase1 {
+    margin-left: 4%;
+  }
+
+  /* ABOUT US */
+  .screen{
+    padding:20% 0;
+  }
+  .screen p{
+    font-size:12px;
+    padding:0% 6%;
+  }
+  .screen h1{
+    font-size:50px
+  }
+  .open-btn{
+    font-size:12px;
+    width:140px;
+    height:30;
+  }
+  .see-btn{
+   display:none;
+  }
+  .who-we{
+    text-align:center;
+  }
+  .who-we p{
+    padding-right:0;
+  }
+  .value{
+    text-align:center;
+  }
+  .value h2{
+    padding-top:10%;
+  }
+  .fin{
+    margin-top:3%;
+    visibility:visible;
+    margin-bottom:3%;
+  }
+  .team h3{
+    padding:10% 0 2% 0 !important;
+  }
+  .cardd{
+    margin-top:7%;
+  }
+  .roww{
+    padding-right:0 !important;
+  }
+  /* CONTACT */
+  .contac i{
+    font-size:60px;
+    padding-top:15%;
+  }
+  .comment{
+    border-top:1px solid grey;
+  }
+  .send{
+    width:100%;
+    padding:0% 0% 7% 0%;
+  }
+  .send h4{
+    font-size:20px;
+  }
+  .send input{
+    width:100%;
+  }
+  .send select{
+    width:100%;
+  }
+  .with{
+    padding-right:57% !important;
+  }
+  .send button{
+    padding:4px 20px;
+    font-size:10px;
+  }
+  /* QUESTION */
+  .frequent{
+    width:100%;
+    padding:0 0 7% 0;
+  }
+  .frequent h4{
+    font-size:20px;
+  }
+  .frequent h5{
+    padding-top:10%;
+    font-size:14px;
+  }
+  .frequent select{
+    margin:4% 0;
+    height:70%;
+  }
+} 

@@ -1,0 +1,350 @@
+<DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial=scale=1.0" />
+        <meta http-equiv="X-UA-compatible" content="ie=edge" />
+        <meta name="author" content="Goltron Project" />
+        <meta name="description" content="Goltron Project" />
+        <meta name="keywords" content="Goltron Project" />
+        <title>Goltron Project</title>
+  
+        <link href="css/goltron.css" rel="stylesheet" type="text/css" />
+        <link href="fontawesome/css/all.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/font.css" rel="stylesheet" type="text/css" />
+        <link href="css/media.css" rel="stylesheet" type="text/css" />
+        <link href="css/animate.css" rel="stylesheet" type="text/css" />
+      </head>
+      <body>
+        <div class="container-fluid pt-4">
+          <div class="row">
+              <div class="col-md-12 log">
+                  <button class="log-in"><a href="login.html">Log in</a></button>
+                  <button class="log-out"><a href="logout.html">Log out</a></button>
+              </div>
+          </div>
+        </div>
+        <div class="container-fluid pt-4">
+          <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+              <a href="#" class="navbar navbar-brand logo hvr-bob"
+                ><img src="img/logo.png"
+              /></a>
+              <button
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#NavBar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="row collapse navbar-collapse" id="NavBar">
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-md-9 menu">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a href="index.html" class="nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICES</a>
+                          <div class="dropdown-menu">
+                              <a href="services.html" class="dropdown-item">PR</a>
+                              <hr/>
+                              <a href="#" class="dropdown-item">BRANDING</a>
+                              <hr/>
+                              <a href="#" class="dropdown-item">ADVERTISING</a>
+                              <hr/>
+                              <a href="#" class="dropdown-item">MARKETING</a>
+                          </div>
+                       </li>
+                        <li class="nav-item">
+                          <a href="freebies.html" class="nav-link">FREEBIES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">MY ACCOUNT</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">WISH LIST</a>
+                                <hr/>
+                                <a href="#" class="dropdown-item">CART</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                          <a href="about.html" class="nav-link">ABOUT</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">HELP</a>
+                          <div class="dropdown-menu">
+                              <a href="question.html" class="dropdown-item">FAQ</a>
+                              <hr/>
+                              <a href="contact.html" class="dropdown-item">CONTACT</a>
+                              <hr/>
+                              <a href="feedback.html" class="dropdown-item">FEEDBACK</a>
+                          </div>
+                       </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 inpt">
+                      <input type="text" name="" placeholder="search..." />
+                      <div class="search"></div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-md-4 icons">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <i class="fab fa-facebook-f pulse"></i>
+                      <i class="fab fa-twitter pulse"></i>
+                      <i class="fab fa-instagram pulse"></i>
+                      <i class="fab fa-whatsapp pulse"></i>
+                   </div>
+                  <!-- SHOPPING-CART -->
+                  <div id="cart-info" class="col-md-5 nav-info cart-info d-flex">
+                    <span class="cart-info_icon"><i class="fas fa-cart-plus"></i></span>
+                    <p class="pt-2"><span id="item-count">0</span>items - $<span class="item-total">00.00</span></p>
+                  </div>
+                 </div>
+                </div>
+                 
+              
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- CART-ITEM -->
+        <div id="cart" class="cart">
+          <!-- <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <img src="img/card.jpg" width="15%" height="10px" class="img-fluid rounded-circle" id="item-img" alt="">
+            <div class="item-text">
+              <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+              <span>$</span>
+              <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
+            </div>
+            <a href="#" id="cart-item-remove" class="cart-item-remove">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div> -->
+             <!-- CART TOTAL -->
+        <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+          <h5>total</h5>
+          <h5>$<strong id="cart-total" class="font-weight-bold">00.00</strong></h5>
+        </div>
+        <!-- CART BUTTON -->
+        <div class="cart-button-container mt-3 d-flex justify-content-between">
+          <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase btn-pink">clear cart</a>
+          <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+        </div>
+        </div>
+
+        <div class="container-fluid mt-5 p-5">
+
+            <div class="row bg-white p-5">
+              <div class="checker">
+                  <div class="row">
+                        <div class="col-md-3">
+                            <h6>ITEMS</h6>
+                              <div class="item mt-4">
+                                <img src="img/card.jpg" width="20%"/>
+                                <h6>Creative Direction</h6>
+                              </div>
+                              <div class="item mt-3">
+                                <img src="img/card.jpg" width="20%"/>
+                                <h6>Branding</h6>
+                              </div>
+                        </div>
+                        <div class="col-md-2 text-center">
+                          <h6>PRICE</h6>
+                              <div class="mt-4">
+                                <h6>$49</h6>
+                              </div>
+                              <div class="mt-3 pt-4">
+                                <h6>$49</h6>
+                              </div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                          <h6>QUANTITY</h6>
+                              <div class="mt-4">
+                                  <button id="subtract">-</button>
+                                  <input type="number" value="0" id="impt">
+                                  <button id="addd">+</button>
+                              </div>
+                              <div class="mt-3 pt-2">
+                                  <button id="subtract">-</button>
+                                  <input type="number" value="0" id="impt">
+                                  <button id="addd">+</button>
+                              </div>
+                        </div>
+                        <div class="col-md-2 text-center">
+                          <h6>TOTAL</h6>
+                              <div class="mt-4">
+                                <h6>$49</h6>
+                              </div>
+                              <div class="mt-3 pt-4">
+                                <h6>$49</h6>
+                              </div>
+                            </div>
+                        <div class="col-md-2 text-center pt-4 ">
+                            <div class="pt-2">
+                                <input type="radio">
+                            </div>
+                            <div class="mt-3 pt-4">
+                                <input type="radio">
+                            </div>
+                       </div>
+                  </div>
+                </div>
+            </div>
+      
+
+
+            <div class="row bg-white p-5 mt-5">
+              <div class="infor">
+                <div class="col-md-12">
+                  <div class="bill">
+                    <label for="fname"><i class="fa fa-user"></i>Full Name</label><br/>
+                    <input type="text" id="fname" name="firstname" placeholder="First Name"><br/>
+
+                    <label for="email"><i class="fa fa-envelope"></i>Email</label><br/>
+                    <input type="text" id="email" name="email" placeholder="Email Address"><br/>
+
+                    <label for="adr"><i class="fas fa-map-marker-alt"></i>Address</label><br/>
+                    <input type="text" id="adr" name="address" placeholder="Address"><br/>
+              
+                    <label for="city"><i class="fas fa-building"></i>City</label><br/>
+                    <input type="text" id="city" name="city" placeholder="city"><br/><br/>
+                  </div>
+
+                    <div class="row state">
+                        <div class="col-md-6">
+                            <label for="state">State</label><br/>
+                            <input type="text" id="state" name="state" placeholder="pp">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="state">Zip</label><br/>
+                            <input type="text" id="zip" name="zip" placeholder="1001">
+                        </div>
+                    </div> 
+                </div>
+
+                  <div class="col-md-12 mt-5  check">
+                    <button class="back">Back to Paymnet</button>
+                    <button class="paid">Pay</button>
+                </div>
+              </div>
+            </div>
+
+              <div class="row bg-white mt-5 p-5">
+                <div class="accept">
+                  <div class="col-md-12">
+                    <div class="pay">
+                      <label for="fname">Accepted Card</label>
+                      <div class="icon-container mb-3">
+                          <i class="fab fa-cc-visa fa-3x" style="color: navy"></i>
+                          <i class="fab fa-cc-amex fa-3x" style="color: blue"></i>
+                          <i class="fab fa-cc-mastercard fa-3x" style="color: red"></i>
+                          <i class="fab fa-cc-discover fa-3x" style="color: orange"></i>
+                      </div>
+                      <label for="cname">Name of Card</label><br/>
+                      <input type="text" id="cname" name="cardnumber" placeholder="Name"><br/>
+
+                      <label for="cname">Credit Card</label><br/>
+                      <input type="text" id="cname" name="cardnumber" placeholder="1111-2222-3333-4444"><br/>
+
+                      <label for="cname">Exp Month</label><br/>
+                      <input type="text" id="cname" name="cardnumber" placeholder="September"><br/><br/>
+                    </div>
+                      <div class="row exp">
+                          <div class="col-md-6">
+                              <label for="expyear">Exp Year</label><br/>
+                              <input type="text" id="expyear" name="expyear" placeholder="2018">
+                          </div>
+                          <div class="col-md-6">
+                              <label for="cvv">CVV</label><br/>
+                              <input type="text" id="cvv" placeholder="532">
+                          </div>
+                      </div>
+                  </div>
+
+                    <div class="col-md-12 mt-5  check">
+                        <button class="back">Back to Paymnet</button>
+                        <button class="paid">Pay</button>
+                    </div>
+                </div>
+            </div>
+
+
+              <!--CONGRAT  -->
+              <div class="row mt-5 cong bg-white">
+                  <div class="col-md-12 bg-white text-center py-5">
+                      <h1>Congratulation!<br/> your order has been accepted!</h1>
+                      <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing nobis voluptate tenetur odit<br/>
+                          omnis natus praesentium quasi dolores ab doloribus, a 
+                      </p>
+                      <button>Purchased</button>
+                  </div>
+              </div>
+     
+        </div>
+
+     
+          <!-- FOOTER -->
+          <div class="bg-dark py-5 mt-1">
+            <div class="container text-white foot">
+              <div class="row">
+                <div class="col-md-3 prod">
+                  <h5>PRODUCT</h5>
+                  <ul>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 prod">
+                  <h5>SERVICES</h5>
+                  <ul>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Public Relations</a></li>
+                    <li><a href="#">Works</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6 fot-icon">
+                  <i class="fab fa-facebook-f pulse"></i>
+                  <i class="fab fa-twitter pulse"></i>
+                  <i class="fab fa-instagram pulse"></i>
+                  <i class="fab fa-whatsapp pulse"></i>
+                </div>
+              </div>
+              <hr class="line" />
+  
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="img/logo.png" width="50%" class="hvr-bob" />
+                </div>
+                <div class="col-md-6 about">
+                  <h5>ABOUT US</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
+                    nihil? Necessitatibus, vero. Quas laudantium voluptate amet
+                    qui sunt assumenda sed rerum maxime facilis magni odit unde,
+                    vitae quibusdam, eos optio?
+                  </p>
+                </div>
+                <div class="col-md-3 pt-5">
+                  <button class="ask">ASK QUESTION</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- JAVASCRIPT LINK -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+      </body></html
+  ></DOCTYPE>
+  

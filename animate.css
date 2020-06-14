@@ -1,0 +1,176 @@
+/* Pulse */
+@-webkit-keyframes pulse {
+  25% {
+    transform: scale(1.5);
+  }
+
+  75% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    transform: scale(1.5);
+  }
+
+  75% {
+    transform: scale(1.1);
+  }
+}
+
+.pulse {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.pulse:hover,
+.pulse:focus,
+.pulse:active {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+/* HVR BOB */
+@-webkit-keyframes hvr-bob {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes hvr-bob {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes hvr-bob-float {
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.hvr-bob {
+  /* display: inline-block; */
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-bob:hover,
+.hvr-bob:focus,
+.hvr-bob:active {
+  animation-name: hvr-bob-float, hvr-bob;
+  animation-duration: 0.3s, 1.5s;
+  animation-delay: 0s, 0.3s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
+}
+
+/* Big */
+.big {
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.big:hover,
+.big:focus,
+.big:active {
+  transform: scale(1.1);
+}
+
+/* Shrink */
+.shrink {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.shrink:hover,
+.shrink:focus,
+.shrink:active {
+  transform: scale(0.9);
+}
+/* Ripple In */
+@-webkit-keyframes hvr-ripple-in {
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes hvr-ripple-in {
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.hvr-ripple-in {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(255, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+.hvr-ripple-in:before {
+  content: "";
+  position: absolute;
+  border: #ff00bf solid 4px;
+  /* top: -12px; */
+  /* right: -12px;
+    bottom: -12px;
+    left: -12px; */
+  opacity: 0;
+  animation-duration: 1s;
+}
+.hvr-ripple-in:hover:before,
+.hvr-ripple-in:focus:before,
+.hvr-ripple-in:active:before {
+  animation-name: hvr-ripple-in;
+}

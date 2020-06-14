@@ -1,0 +1,268 @@
+<DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial=scale=1.0" />
+        <meta http-equiv="X-UA-compatible" content="ie=edge" />
+        <meta name="author" content="Goltron Project" />
+        <meta name="description" content="Goltron Project" />
+        <meta name="keywords" content="Goltron Project" />
+        <title>Goltron Project</title>
+  
+        <link href="css/goltron.css" rel="stylesheet" />
+        <link href="fontawesome/css/all.css" rel="stylesheet" type="text/css" />
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/font.css" rel="stylesheet" type="text/css" />
+        <link href="css/media.css" rel="stylesheet" type="text/css" />
+        <link href="css/animate.css" rel="stylesheet" type="text/css" />
+      </head>
+      <body>
+        <div class="container-fluid pt-4">
+          <div class="row">
+            <div class="col-md-12 log">
+                <button class="log-in"><a href="login.html">Log in</a></button>
+                <button class="log-out"><a href="logout.html">Log out</a></button>
+            </div>
+        </div>
+          <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+              <a href="#" class="navbar navbar-brand logo hvr-bob"
+                ><img src="img/logo.png"
+              /></a>
+              <button
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#NavBar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="row collapse navbar-collapse" id="NavBar">
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-md-9 menu">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a href="index.html" class="nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">SERVICES</a>
+                          <div class="dropdown-menu">
+                              <a href="services.html" class="dropdown-item">PR</a>
+                              <hr/>
+                              <a href="#" class="dropdown-item">BRANDING</a>
+                              <hr/>
+                              <a href="#" class="dropdown-item">ADVERTISING</a>
+                              <hr/>
+                              <a href="#" class="dropdown-item">MARKETING</a>
+                          </div>
+                       </li>
+                        <li class="nav-item">
+                          <a href="freebies.html" class="nav-link">FREEBIES</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">MY ACCOUNT</a>
+                          <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item">Wish List</a>
+                              <hr/>
+                              <a href="checkout.html" class="dropdown-item">Cart</a>
+                          </div>
+                      </li>
+                        <li class="nav-item">
+                          <a href="about.html" class="nav-link">ABOUT</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">HELP</a>
+                          <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item">FAQ</a>
+                              <hr/>
+                              <a href="contact.html" class="dropdown-item">CONTACT</a>
+                              <hr/>
+                              <a href="feedback.html" class="dropdown-item">FEEDBACK</a>
+                          </div>
+                       </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 inpt">
+                      <input type="text" name="" placeholder="search..." />
+                      <div class="search"></div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-md-4 icons">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <i class="fab fa-facebook-f pulse"></i>
+                      <i class="fab fa-twitter pulse"></i>
+                      <i class="fab fa-instagram pulse"></i>
+                      <i class="fab fa-whatsapp pulse"></i>
+                   </div>
+                  <!-- SHOPPING-CART -->
+                  <div id="cart-info" class="col-md-5 nav-info cart-info d-flex">
+                    <span class="cart-info_icon"><i class="fas fa-cart-plus"></i></span>
+                    <p class="pt-2"><span id="item-count">0</span>items - $<span class="item-total">00.00</span></p>
+                  </div>
+                 </div>
+                </div>
+                 
+              
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- CART-ITEM -->
+        <div id="cart" class="cart">
+          <!-- <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <img src="img/card.jpg" width="15%" height="10px" class="img-fluid rounded-circle" id="item-img" alt="">
+            <div class="item-text">
+              <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+              <span>$</span>
+              <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
+            </div>
+            <a href="#" id="cart-item-remove" class="cart-item-remove">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div> -->
+             <!-- CART TOTAL -->
+            <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+              <h5>total</h5>
+              <h5>$<strong id="cart-total" class="font-weight-bold">00.00</strong></h5>
+            </div>
+            <!-- CART BUTTON -->
+            <div class="cart-button-container mt-3 d-flex justify-content-between">
+              <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase btn-pink">clear cart</a>
+              <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+            </div>
+            </div>
+            <!-- END OF CART BUTTON -->
+            <!-- CONTACT -->
+            <div class="container-fluid bg-white">
+                <div class="container">
+                    <div class="row text-center contac">
+                        <div class="col-md-4">
+                            <i class="fas fa-phone-square-alt fa-9x"></i>
+                            <h5 class="font-weight-bold pt-3">PHONE</h5>
+                            <p>
+                                <b>0809 647 2053</b><br/>
+                               Mon - Fri: 9am-6pm WAT
+                            </p>
+                            <button>CALL US</button>
+                        </div>
+                        <div class="col-md-4">
+                            <i class="fas fa-envelope-open-text fa-9x"></i>
+                            <h5 class="font-weight-bold pt-3">EMAIL</h5>
+                            <p>
+                                Drop us a line anytime<br/>
+                                goltronmarketing@gmail.com
+                            </p>
+                            <button>EMAIL US</button>
+                        </div>
+                        <div class="col-md-4">
+                            <i class="fas fa-comments fa-9x"></i>
+                            <h5 class="font-weight-bold pt-3">FEEDBACK</h5>
+                            <p>
+                                We'd love to hear from you<br/>
+                                and replay as soon as possible
+                            </p>
+                            <button>GIVE FEEDBACK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid pb-5 comment">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="frequent">
+                                <h4>
+                                    FREQUENTLY ASKED QUESTION
+                                </h4>
+
+                                <h5>GENERAL</h5>
+                                <hr/>
+                                <select id="gender" class="form-control">
+                                    <option>HOW LONG DOES IT TAKE TO GET A LOGO</option>
+                                    <option>HOW LONG DOES IT TAKE TO CREATE WEBSITE</option>
+                                    <option>HOW LONG DOES IT TAKE TO GET A FLIER</option>
+                                    <option>HOW LONG DOES IT TAKE TO LEARN DESIGN</option>
+                                  </select>
+                                  <hr/>
+                                  <select id="gender" class="form-control">
+                                    <option>CAN I ORDER MORE THAN ONE PER PERSON?</option>
+                                    <option>CAN I ORDER AT ANY TIME OF THE DAY?</option>
+                                    <option>CAN GOODS BE RETURN?</option>
+                                  </select>
+                                  <hr/>
+                                  <select id="gender" class="form-control">
+                                    <option>I AM OK WITH THE SRVICES</option>
+                                    <option>I AM NOT OKEY WITH THE SERVICES</option>
+                                    <option>I AM PARTIALLY OKEY THE SERVICES</option>
+                                    <option>I HAVE NO PROBLEM WITH THE SERVICES</option>
+                                  </select>
+                                  <hr/>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+  
+  
+          <!-- FOOTER -->
+          <div class="bg-dark py-5">
+            <div class="container text-white foot">
+              <div class="row">
+                <div class="col-md-3 prod">
+                  <h5>PRODUCT</h5>
+                  <ul>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3 prod">
+                  <h5>SERVICES</h5>
+                  <ul>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Public Relations</a></li>
+                    <li><a href="#">Works</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6 fot-icon">
+                  <i class="fab fa-facebook-f pulse"></i>
+                  <i class="fab fa-twitter pulse"></i>
+                  <i class="fab fa-instagram pulse"></i>
+                  <i class="fab fa-whatsapp pulse"></i>
+                </div>
+              </div>
+              <hr class="line" />
+  
+              <div class="row">
+                <div class="col-md-3">
+                  <img src="img/logo.png" width="50%" class="hvr-bob" />
+                </div>
+                <div class="col-md-6 about">
+                  <h5>ABOUT US</h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
+                    nihil? Necessitatibus, vero. Quas laudantium voluptate amet
+                    qui sunt assumenda sed rerum maxime facilis magni odit unde,
+                    vitae quibusdam, eos optio?
+                  </p>
+                </div>
+                <div class="col-md-3 pt-5">
+                  <button class="ask">ASK QUESTION</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- JAVASCRIPT LINK -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+      </body>
+      </html
+  
+  
